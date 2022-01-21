@@ -1,66 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/95eeee5aab.js" crossorigin="anonymous"></script>
-    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;700&family=Merriweather+Sans:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Nuk | Portfolio</title>
+    <meta name="description" content="Free Web tutorials">
 </head>
+
 <body>
-
-    <header>
-        <h1>My Portfolio from First year of Frontend developer</h1>
-    </header>
-
-    <main>
-
-        <section>
-            <h2>Cross-course project</h2>
-            <a href="https://rainsdays.netlify.app/">View the project</a> <a href="https://github.com/NukLaochaem/28-09-2020_html-css-CA_sattaphat">View on Github</a>
-            <h3></h3>
-            <img src="images/Cross_project.png" alt="feedback from interaction design">
-            <img src="images/CMS_feedback.png" alt="CMS feedback">
-            <p>The most time i spend for this project is the mobile responsive. had to redesign/redo some of the websites structures and coding. still not finish with it. since i got little time. wanted to api call item id to the bag page but didnt get time.</p>
-            <p>I fix the contact page as the feedback say aswell as the meta tag description, corp some of the images it was way to big taking up the whole screen. API call to the product page.</p>
-            <p>spends sometime on a new element 'table' was ging to use it on yourbag page but didnt quit go as plan.</p>
-            <p>i removed the favorite page. I saw that many websites you can just add an item to bag/cart anyway.. also remove the search bar. i did remove a sec nav menu to for sale, and different types of jacket. was a big mass</p>
-            <p>when i first start to code on this project again it was a big mas that i just use margin and padding to push element in place... not flexbox or anything. all i saw was my screen not the other. big big mass to fix.</p>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <ul>
+                    <li>Nuk</li>
+                    <li>Portfolio</li>
+                    <li>About</li>
+                </ul>
+            </nav>
+        </header>
+        <section class="hero-container">
+            <div class="hero-text">
+                <h1>My name is <span>Nuk</span>, I make websites.</h1>
+                <p>I'm a Frontend Developer base in Bergen, Norway</p>
+            </div>
         </section>
 
-        <section>
-            <h2>Semester Project 1</h2>
-            <a href="https://communitymuseumscience.netlify.app/">View the project</a> <a href="https://github.com/NukLaochaem/16-11-2020_Semester_Project_sattaphat">View on Github</a>
-            <h3></h3>
-            <img src="images/Semester_project1.png" alt="feedback from semester project1">
-            <p>for the semester project i been working on the feedback i got. Made a logo and update both in desktop and mobile responsive</p>
-            <p>I update the h1 background to be more green and pink color to give more contrast.</p>
+        <main>
+            <h2>My Project</h2>
+            <section class="project-container">
 
-        </section>
+                <div class="project community-science">
+                    <h3>Community Science | Semester project 1</h3>
+                    <a href="https://communitymuseumscience.netlify.app/">
+                        <img class="website-img" src="images/communityMuseum.png" alt="">
+                    </a>
+                    <p>Community was our first semester project, force on design and HTML & CSS.</p>
+                    <p>Goal was to focused on content management, SEO, mobile responsive, appeal of the website and ease
+                        navigation and WCAG guidelines.
+                    </p>
+                    <p>The biggest problem i had with this project was responsive deisgn, start to code as website
+                        before mobile was a mistake.</p>
+                </div>
 
-        <section>
-            <h2>Project Exam 1</h2>
-            <a href="https://siamtravel.netlify.app/">View the project</a> <a href="https://github.com/Noroff-FEU-Assignments/project-exam-1-NukLaochaem">View on Github</a>
-            <h3></h3>
-            <img src="images/Exam1.png" alt="feedback from exam1">
-            <p>For the exam project i been making changes from the feedback i got within WCAG guildlines</p>
-            <p>Meta tag description has been updated, and all h1,h2,h3 in all pages. The grey text color on the index page has turn up to be more back. And the orange text on the contact page, aswell as added h1 to about us as suggested.</p>
-            <p>Nav opacity from 0.9 to 1, error feedback text from black to red in contact page to show it is an Error</p>
-            <p>very good details feedback from the project exam.</p>
-        </section>
+                <div class="project rainy-days">
+                    <h3>RainyDays | First year project</h3>
+                    <a href="https://rainsdays.netlify.app/">
+                        <img class="website-img" src="images/RainyDays.png" alt="rainy-days">
+                    </a>
+                    <p>RainyDays is a project we been working across the first years of study, first half was about
+                        Deisgn/prototype and HTML & CSS. Later on we learn to use javascript update the functionality at
+                        the end of the year.
+                    </p>
+                    <p>We update the website due to a subject we were learing like interaction design,
+                        javascript and WordPress.</p>
+                </div>
 
-        <section>
-            <h3>The fortfolio</h3>
-            <p>I misunderstood that you have to make changes to ALL 3 of the project.. spend most of the time on Cross-course project since it needed a big update. found it out at the last hours on the deliver page that i get points by ea changes of the 3 project.</p>
-            <p>so i had to make some quick changes to the other 2 project. hope it enough.</p>
+                <div class="project siam-travel">
+                    <h3>Siam Travel blogg | Project Exam</h3>
+                    <a href="https://siamtravel.netlify.app/">
+                        <img class="website-img" src="images/siamTravel.png" alt="">
+                    </a>
+                    <p>The 1st year project exam we got was a blog website as task. The content for the website must be
+                        store on WordPress. </p>
+                    <p>Put in use what we have learn in the first year. we had around 1 month deadline to
+                        make the website with prototype and a report feedback half way tho the project from users to
+                        test the project with hotjar.</p>
+                    <p>With the feedback i look at what the users spends most/less time at, does the navigation work the
+                        way i wanted to. I use that infomation to update the project.</p>
+                </div>
+            </section>
 
-            <p>Got feedback about some element that needed to have max-width. look like it strech too much on a bigger screen. i have no idea and havent think about it at all. i forgot that that you could zoom out on the developer tools to look at bigger screen. Might have been using % on some div or container.</p>
+            <section class="about-container">
+                <h2>About me</h2>
 
-            <p>So far for this year has been fun, learn alot of stuff. some were easy to learn/understand some was not at all. I do enjoy coding when you know what to do make it really good flow, like the start phase of making a website. until the hard part come and burn your brain out. also not a big fan of designing. For now i wil be looking into html 'table' and max-width with css. Had some hard time with JS aswell might have to do some online course in summer.</p>
-            <p>Planning to apply for a traine to see how the real guys are working in my city. </p>
-        </section>
-    </main>
+                <picture>
+                    <img class="about-img" src="images/aboutMe.jpg" alt="Handsome guy">
+                </picture>
 
+
+
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li>2020 - 2022 Frontend Developer, Noroff</li>
+                        <li>2018 - 2019 Personal trainer, Høyskole på vestlandet</li>
+                        <li>2015 - 2017 University Admission Certification, Sonans</li>
+                        <li>2008 - 2010 Culinary School, Sandsli Vgs</li>
+                    </ul>
+                </div>
+
+                <div class="work-experience">
+                    <h3>Prior Work Experience</h3>
+                    <ul>
+                        <li>2021 - Co-Founder/MuayThai instructor at BSI MuayThai</li>
+                        <li>2019 - Security</li>
+                        <li>2010 - 2018 - Waiter/Bartender</li>
+                    </ul>
+                </div>
+
+
+                <div class="about-me">
+                    <h3>Hey There,</h3>
+                    <p>My name is Nuk, Im a Frontend web developepr base in Bergen, Norway</p>
+                    <p>I am originally from Thailand born in 1992, moved to Norway since 2004.</p>
+                    <p>Recently graduated from Noroff, School of technology and digital media 2022.</p>
+                    <p>My interest in web development started back in 2019 when i took a internet course how to build
+                        an website, and turn out to be fun and something i enjoy doing. When im not coding, you find me
+                        traning and play video games.
+                    </p>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <p>© Copyright 2022 | Nuk</p>
+        </footer>
+    </div>
 </body>
+
 </html>
