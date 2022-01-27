@@ -45,13 +45,8 @@ h3 {
   letter-spacing: 0.1rem;
   line-height: 1.4;
 }
-a {
-  text-align: center;
-  font-size: "";
-}
 p,
 li {
-  padding: 5px;
   font-size: 1rem;
   letter-spacing: 0.1rem;
   line-height: 1.4;
@@ -59,15 +54,30 @@ li {
 ul {
   list-style-position: inside;
 }
+/*                               NAV               */
+.nav-logo {
+  width: 40px;
+  border-radius: 50%;
+}
 
-/*           Hero banner     */
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 1rem 0;
+}
+
+/*                                Hero banner     */
 .hero-container {
+  position: relative;
+}
+.hero-bg {
   background-image: url("/images/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right center;
   height: 450px;
-  position: relative;
+  opacity: 0.4;
 }
 .hero-text {
   position: absolute;
@@ -83,28 +93,57 @@ ul {
   color: var(--primary-color);
 }
 
-/*           Project                  */
+/*                              Project                  */
 .project {
-  margin: 2rem 0;
+  margin: 3rem 0;
 }
-/*           About                  */
+.project h3 {
+  text-align: center;
+}
+.project p {
+  padding: 0.8rem 0;
+}
+
+.website-img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: auto;
+}
+
+/*                               link                 */
+.link {
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+.link a {
+  color: var(--primary-color);
+  text-underline-offset: 3px;
+  padding: 5px;
+}
+.link a:hover {
+  background-color: var(--hover-color);
+  color: white;
+}
+/*                                About                  */
 .education,
 .work-experience,
 .about-me {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
-.website-img {
-  width: 100%;
+ul li {
+  padding: 0.5rem 0;
+}
 
-  max-width: 450px;
-}
 .about-img {
   width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: auto;
+}
 
-  max-width: 450px;
-}
-.about-me {
-}
+/*                 Footer                              */
 footer p {
   text-align: center;
   font-size: 0.7rem;
@@ -112,4 +151,27 @@ footer p {
 }
 
 @media screen and (min-width: 768px) {
+  main {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .link {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .about-img {
+    width: 50%;
+    padding: 3rem 2rem;
+    margin-top: 2rem;
+    float: left;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  main {
+    width: 60%;
+    margin: 0 auto;
+  }
 }
